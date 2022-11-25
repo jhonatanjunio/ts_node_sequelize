@@ -1,4 +1,4 @@
-# FROM JS TO TS
+# Node e Sequelize: de JavaScript para Typescript
 
 ## Objetivo 
 
@@ -45,4 +45,7 @@ Sequelize<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟩 SOLID<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟩 Camada de Repositório e de Serviço<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟩 Criar os Testes Unitários<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟩 Criar os Testes de Integração<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟩 Criar os Testes de Integração
+
+<br/><br/>
+##### Made with 💜 by [Jhonatan](https://github.com/jhonatanjunio)

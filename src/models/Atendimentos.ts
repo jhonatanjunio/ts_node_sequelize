@@ -1,9 +1,7 @@
+import { DataTypes } from 'sequelize';
 import db from "../database";
-import { DataTypes } from "sequelize";
 
-const Atendimentos = db.define(
-    "Atendimentos", 
-    {   
+export const Atendimento = db.define('Atendimento', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -14,20 +12,19 @@ const Atendimentos = db.define(
     },
     observacao: {
         type: DataTypes.STRING,
-    },    
+    },
     psicologos_id: {
         type: DataTypes.INTEGER,
-        
+
     },
     pacientes_id: {
         type: DataTypes.INTEGER,
-        
+
     },
-},
-{
-    tableName: "atendimentos",
-    timestamps: false,
-
-})
-
-export default Atendimentos;
+}, {
+    modelName: 'Atendimento',
+    tableName: 'atendimentos',
+    freezeTableName: true,
+    createdAt: false,
+    updatedAt: false,
+});

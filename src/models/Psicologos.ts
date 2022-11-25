@@ -1,9 +1,7 @@
+import { DataTypes } from 'sequelize';
 import db from "../database";
-import { DataTypes } from "sequelize";
 
-const Psicologos = db.define(
-    "Psicologos", 
-    {
+export const Psicologo = db.define('Psicologo', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -14,17 +12,17 @@ const Psicologos = db.define(
     },
     email: {
         type: DataTypes.STRING,
-    },    
+    },
     senha: {
         type: DataTypes.STRING,
     },
     apresentacao: {
         type: DataTypes.STRING,
     },
-},
-{
-    tableName: "psicologos",
-    timestamps: false,
-})
-
-export default Psicologos;
+}, {
+    modelName: 'Psicologo',
+    tableName: 'psicologos',
+    freezeTableName: true,
+    createdAt: false,
+    updatedAt: false,
+});

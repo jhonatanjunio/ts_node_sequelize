@@ -1,8 +1,13 @@
+import { DataTypes } from 'sequelize';
 import db from "../database";
-import { DataTypes, Model } from "sequelize";
 
-export default class Pacientes extends Model { }
-Pacientes.init({
+export type TPaciente = {
+    nome: string;
+    email: string;
+    idade: number
+};
+
+export const Paciente = db.define('Paciente', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -15,12 +20,12 @@ Pacientes.init({
         type: DataTypes.STRING,
     },
     idade: {
-        type: DataTypes.DATE,
+        type: DataTypes.INTEGER,
     },
 }, {
-    modelName: 'pacientes',
+    modelName: 'Paciente',
+    tableName: 'pacientes',
     freezeTableName: true,
     createdAt: false,
     updatedAt: false,
-    sequelize: db
-})
+});

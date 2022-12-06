@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "start": "nodemon -e ts  --exec \"npm run dev\"",
     "dev": "tsc && node -r dotenv/config build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
